@@ -10,8 +10,6 @@ let jump = 3;
 let jump_blur = 5;
 let base = 0;
 let blur_base = 10;
-let rgba_one = [0,0,0];
-let rgba_two = [0,0,0];
 
 function glowing(){
     box.style.background = "linear-gradient("+(base+jump)+"deg, rgba(119,0,255,1) 0%, rgba(255,0,0,1) 15%, rgba(255,102,0,1) 29%, rgba(204,255,0,1) 46%, rgba(146,255,5,1) 52%, rgba(0,255,17,1) 67%, rgba(38,0,255,1) 84%, rgba(114,0,255,1) 99%, rgba(119,0,255,1) 100%)";
@@ -46,9 +44,11 @@ speed.oninput = function() {
     output = speed.value;
     timer=setInterval(glowing,output);
   };
+
 radius.oninput = function() {
     max_radius = radius.value;
   };
+
 stopper.addEventListener("click", function(){
     if(temp_toggler == true){
         clearInterval(timer);
