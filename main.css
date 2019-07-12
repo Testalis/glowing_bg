@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  height: 100vh;
+  width: 100%;
+  font-size: 1.15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #050413;
+  z-index: -1000;
+  position: relative;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.box {
+  height: 400px;
+  width: 300px;
+  position: relative;
+  background: #050413;
+  color: white;
+  padding: 1rem;
+}
+
+.box .back-box {
+  content: " ";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: #3366ff;
+  z-index: -1;
+}
+
+.box .box-glow {
+  content: " ";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: #3366ff;
+  z-index: -2;
+}
+
+.box #box-glow {
+  background: -webkit-gradient(linear, left bottom, left top, from(red), to(#0073ff));
+  background: linear-gradient(0deg, red 0%, #0073ff 100%);
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
+.slidecontainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px;
+}
+
+.slidecontainer input {
+  display: block;
+  margin-top: 15px;
+}
+
+.slidecontainer input[type=checkbox] {
+  height: 25px;
+  width: 25px;
+}
+
+.slidecontainer label {
+  color: white;
+  display: block;
+}
+
+.slidecontainer .btn {
+  padding: 15px 10px;
+  border: 2px solid #3366ff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  background: #050413;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
