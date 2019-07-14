@@ -76,5 +76,60 @@ body,html{
     }
 }
 
+nav{
+    width:100%;
+    position: fixed;
+    height:5em;
+    top:0%;
+    z-index: 2;
+    box-shadow: 0px 10px 16px -13px rgba(0,0,0,0.75);
+    @media (min-width: 768px) {
+        height:5em;
+    }
+    .line{
+        width:30px;
+        height:3px;
+        background: #000;
+        margin:5px;
+    }
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right:5%;
+        top:50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        background: #3366ff;
 
+        @media (min-width: 768px) {
+            display: none;
+        }
+}
+.nav-link-wrapper{
+    height:100vh;
+    background:#fff;
+    width:50%;
+    float:right;
+    transform: translateX(100%);
+    transition:all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:2em;
+    @media (min-width: 768px) {
+        height:30vh;
+        width:30%;
+        float:left;
+        transform: translateX(0);
+    }
+    input{
+        margin-top:1em;
+    }
 
+}
+.open{
+    transform: translateX(0%);
+    transition: all 0.5s;
+}
+}

@@ -95,4 +95,90 @@ body, html {
   background: #050413;
   color: white;
 }
+
+nav {
+  width: 100%;
+  position: fixed;
+  height: 5em;
+  top: 0%;
+  z-index: 2;
+  -webkit-box-shadow: 0px 10px 16px -13px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 10px 16px -13px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 768px) {
+  nav {
+    height: 5em;
+  }
+}
+
+nav .line {
+  width: 30px;
+  height: 3px;
+  background: #000;
+  margin: 5px;
+}
+
+nav .hamburger {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 50%;
+  -webkit-transform: translate(-5%, -50%);
+          transform: translate(-5%, -50%);
+  z-index: 2;
+  background: #3366ff;
+}
+
+@media (min-width: 768px) {
+  nav .hamburger {
+    display: none;
+  }
+}
+
+nav .nav-link-wrapper {
+  height: 100vh;
+  background: #fff;
+  width: 50%;
+  float: right;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em;
+}
+
+@media (min-width: 768px) {
+  nav .nav-link-wrapper {
+    height: 30vh;
+    width: 30%;
+    float: left;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+nav .nav-link-wrapper input {
+  margin-top: 1em;
+}
+
+nav .open {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
 /*# sourceMappingURL=main.css.map */

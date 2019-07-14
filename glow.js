@@ -1,3 +1,6 @@
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.nav-link-wrapper');
+
 let box = document.querySelector("#box-glow");
 let speed = document.getElementById("speed");
 let radius = document.getElementById("radius");
@@ -58,4 +61,9 @@ stopper.addEventListener("click", function(){
         timer=setInterval(glowing,output);
         temp_toggler = true;
     }
+});
+
+
+hamburger.addEventListener('click', () =>{
+    menu.classList.toggle('open');
 });
